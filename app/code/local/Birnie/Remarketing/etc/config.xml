@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Birnie_Remarketing>
+            <version>0.9</version>
+        </Birnie_Remarketing>
+    </modules>
+    <global>
+        <blocks>
+            <birnie_remarketing>
+                <class>Birnie_Remarketing_Block</class>
+            </birnie_remarketing>
+        </blocks>
+        <models>
+            <birnie_remarketing>
+                <class>Birnie_Remarketing_Model</class>
+            </birnie_remarketing>
+        </models>
+        <events>
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <birnie_remarketing>
+                        <class>birnie_remarketing/observer</class>
+                        <method>setRemarketingOnOrderSuccessPageView</method>
+                    </birnie_remarketing>
+                </observers>
+            </checkout_onepage_controller_success_action>
+        </events>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <birnie_remarketing>
+                    <file>remarketing.xml</file>
+                </birnie_remarketing>
+            </updates>
+        </layout>
+    </frontend>
+</config>
