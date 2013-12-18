@@ -8,6 +8,13 @@ applies on the product detail and cart pages.  Adwords is also notified
 when a customer successfully purchases an item so that they are not 
 remarketed for items that they have already bought.
 
+# Support
+
+This is a relatively simple module so it should be fine on most magento installs. However it has been tested in the following envioronments. 
+
+* **Community Edition**: 1.7
+* **Enterprise Edition**: 1.12
+
 # Installation
 
 The installation process is similar to most Magento extensions:
